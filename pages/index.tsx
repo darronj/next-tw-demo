@@ -1,4 +1,4 @@
-import type { NextPage } from 'next';
+import type { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 
@@ -83,7 +83,7 @@ const Home: NextPage = () => {
   );
 };
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   return {
     props: {}, // will be passed to the page component as props
   };
